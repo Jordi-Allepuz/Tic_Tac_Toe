@@ -115,7 +115,7 @@ public class tic_tac_toe implements ActionListener {
             if ( buttons[i].getText().equals(buttons[i + 1].getText())
                     && buttons[i].getText().equals(buttons[i + 2].getText())
                     && !buttons[i].isEnabled()) {
-                JOptionPane.showMessageDialog(frame, buttons[i].getIcon() + "WINS");
+                JOptionPane.showMessageDialog(frame, buttons[i].getText() + " Player WINS");
                 resetGame();
                 return;
             }
@@ -127,7 +127,7 @@ public class tic_tac_toe implements ActionListener {
             if (buttons[i].getText().equals(buttons[i + 3].getText())
                     && buttons[i].getText().equals(buttons[i + 6].getText())
                     && !buttons[i].isEnabled()) {
-                JOptionPane.showMessageDialog(frame, buttons[i].getIcon() + "WINS");
+                JOptionPane.showMessageDialog(frame, buttons[i].getText() + " Player WINS");
                 resetGame();
                 return;
             }
@@ -136,14 +136,14 @@ public class tic_tac_toe implements ActionListener {
         if (buttons[0].getText().equals(buttons[4].getText())
                 && buttons[0].getText().equals(buttons[8].getText())
                 && !buttons[0].isEnabled()) {
-            JOptionPane.showMessageDialog(frame, buttons[0].getIcon() + "WINS");
+            JOptionPane.showMessageDialog(frame, buttons[0].getText() + " Player WINS");
             resetGame();
             return;
         }
         if (buttons[2].getText().equals(buttons[4].getText())
                 && buttons[2].getText().equals(buttons[6].getText())
                 && !buttons[2].isEnabled()) {
-            JOptionPane.showMessageDialog(frame, buttons[2].getIcon() + "WINS");
+            JOptionPane.showMessageDialog(frame, buttons[2].getText() + " Player WINS");
             resetGame();
             return;
         }
